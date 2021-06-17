@@ -1,0 +1,2 @@
+# InterviewHub
+Designed for small buisnesses to have all of their interview applications in 1 place. Small buisnesses can post their job posting in many websites (Indeed, Instagram, Facebook, etc) but there is no way for them to track all of their applicants without scrolling through DMs or navigating through multiple websites. InterviewHub is designed so small buisness owners can have their own application "hub" where they can find their applications across different platforms with added features such as emailing, marking the interview as done, etc. 
