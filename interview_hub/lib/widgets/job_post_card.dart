@@ -11,6 +11,8 @@ class JobPostCard extends StatelessWidget {
       height: 200,
       width: 400,
       child: Card(
+        elevation: 5.0,
+        margin: const EdgeInsets.all(10.0),
         child: Column(
           children: [
           
@@ -21,7 +23,7 @@ class JobPostCard extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.all(16.0),
-              child: Text("We are hiring servers and cooks"),
+              child: Text("We are hiring servers"),
             ),
 
             Expanded(
