@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:interview_hub/shared/app_colors.dart';
 
-
-/// Sign In Screen
-
-class SignInScreen extends StatelessWidget {
+class SignInScreenDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Size screenSize = MediaQuery.of(context).size;
@@ -13,16 +11,7 @@ class SignInScreen extends StatelessWidget {
         child: Container(
             height: screenSize.height,
             width: screenSize.width,
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage(
-                      'assets/images/horizon.webp',
-                    ),
-                    alignment: Alignment.topCenter,
-                    fit: BoxFit.cover,
-                    colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop)
-                )
-              ),
+            color: primaryTan,
             child: SingleChildScrollView(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -55,9 +44,9 @@ class SignInScreen extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         color: primaryBlue),
                   ),
-                    
+            
                   const SizedBox(height: 200,),
-                    
+            
                   SizedBox(
                     height: 50,
                     width: 200,
@@ -81,4 +70,3 @@ class SignInScreen extends StatelessWidget {
     );
   }
 }
-
