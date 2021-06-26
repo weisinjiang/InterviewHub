@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:interview_hub/services/auth_provider.dart';
 import 'package:interview_hub/shared/app_colors.dart';
+import 'package:provider/provider.dart';
 
 
 /// Sign In Screen
@@ -7,7 +9,10 @@ import 'package:interview_hub/shared/app_colors.dart';
 class SignInScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     final Size screenSize = MediaQuery.of(context).size;
+    final AuthProvider auth = Provider.of<AuthProvider>(context);
+
     return Scaffold(
       body: SafeArea(
         child: Container(
@@ -49,7 +54,7 @@ class SignInScreen extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "Made for Small Buisness Owners",
+                    "Made for Small Business Owners",
                     style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -65,7 +70,7 @@ class SignInScreen extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           primary: primaryBlue,
                         ),
-                        onPressed: () => print("sign in with Google"),
+                        onPressed: () => auth.signIn(),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
